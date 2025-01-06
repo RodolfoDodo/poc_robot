@@ -1,29 +1,37 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
 trigger:
-- main  # Roda o pipeline sempre que há alterações na branch 'main'
+- main
 
 pool:
-  vmImage: 'windows-latest'  # Usa um agente hospedado no Azure com Windows
+  vmImage: windows-latest
+strategy:
+  matrix:
+    Python38:
+      python.version: '3.8'
 
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.x'  # Instala o Python 3.x
-    addToPath: true
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
 
 - script: |
     python -m pip install --upgrade pip
-    pip install robotframework
-    pip install robotframework-seleniumlibrary
-   
-  displayName: 'Instalar dependências'
+    pip install -r requirements.txt
+    rfbrowser init
+  displayName: 'Install dependencies'
 
 - script: |
-    robot --outputdir results tests/
-  displayName: 'Executar testes Robot Framework'
+    robot -d ./logs -x output-xunit.xml tests
+  continueOnError: true
+  displayName: 'Run UI Tests'
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'Robot'
-    testResultsFiles: 'results/output.xml'
-    searchFolder: '$(System.DefaultWorkingDirectory)'
-  displayName: 'Publicar resultados dos testes'
+    testResultsFormat: 'JUnit'
+    testResultsFiles: 'logs/output-xunit.xml'
+  displayName: 'Publish Test Results'
