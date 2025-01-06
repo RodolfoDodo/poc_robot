@@ -26,7 +26,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    robot -d ./logs -x output-xunit.xml tests
+    robot --loglevel TRACE -d ./logs --xunit output-xunit.xml tests
   continueOnError: true
   displayName: 'Run UI Tests'
 
