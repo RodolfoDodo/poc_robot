@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="5" errors="0" failures="5" skipped="0" time="0.247" timestamp="2025-01-06T13:14:54.732188">
+<testsuite name="Login" tests="5" errors="0" failures="5" skipped="0" time="0.114" timestamp="2025-01-06T13:14:54.862403">
+<testcase classname="Tests.Login" name="Senha incorreta" time="0.021">
+<failure message="Setup failed:&#10;No keyword with name 'New Browser' found.&#10;&#10;Also teardown failed:&#10;No keyword with name 'Take Screenshot' found." type="AssertionError"/>
+</testcase>
+<testcase classname="Tests.Login" name="Usuário não cadastrado" time="0.008">
+<failure message="Setup failed:&#10;No keyword with name 'New Browser' found.&#10;&#10;Also teardown failed:&#10;No keyword with name 'Take Screenshot' found." type="AssertionError"/>
+</testcase>
+<testcase classname="Tests.Login" name="Usuário deve ser obrigatório" time="0.010">
+<failure message="Setup failed:&#10;No keyword with name 'New Browser' found.&#10;&#10;Also teardown failed:&#10;No keyword with name 'Take Screenshot' found." type="AssertionError"/>
+</testcase>
+<testcase classname="Tests.Login" name="Senha deve ser obrigatória" time="0.011">
+<failure message="Setup failed:&#10;No keyword with name 'New Browser' found.&#10;&#10;Also teardown failed:&#10;No keyword with name 'Take Screenshot' found." type="AssertionError"/>
+</testcase>
+<testcase classname="Tests.Login" name="Login com sucesso" time="0.011">
+<failure message="Setup failed:&#10;No keyword with name 'New Browser' found.&#10;&#10;Also teardown failed:&#10;No keyword with name 'Take Screenshot' found." type="AssertionError"/>
+</testcase>
+<properties>
+<property name="Documentation" value="Testes de Criação de Clientes"/>
+</properties>
+</testsuite>
+</testsuite>

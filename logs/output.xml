@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-06T13:14:54.724208" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\poc\tests">
+<suite id="s1-s1" name="Login" source="C:\poc\tests\login.robot">
+<test id="s1-s1-t1" name="Senha incorreta" line="10">
+<kw name="Start Browser" owner="actions" type="SETUP">
+<kw name="New Browser">
+<msg time="2025-01-06T13:14:54.914653" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<arg>browser=webkit</arg>
+<arg>headless=True</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.914520" elapsed="0.000309">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${base_url}</arg>
+<status status="NOT RUN" start="2025-01-06T13:14:54.915838" elapsed="0.000061"/>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.906738" elapsed="0.009489">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<kw name="Take Screenshot">
+<msg time="2025-01-06T13:14:54.923361" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<arg>fullPage=true</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.923194" elapsed="0.000344">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.917425" elapsed="0.006698">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.903982" elapsed="0.020650">Setup failed:
+No keyword with name 'New Browser' found.
+
+Also teardown failed:
+No keyword with name 'Take Screenshot' found.</status>
+</test>
+<test id="s1-s1-t2" name="Usuário não cadastrado" line="14">
+<kw name="Start Browser" owner="actions" type="SETUP">
+<kw name="New Browser">
+<msg time="2025-01-06T13:14:54.931966" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<arg>browser=webkit</arg>
+<arg>headless=True</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.931899" elapsed="0.000160">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${base_url}</arg>
+<status status="NOT RUN" start="2025-01-06T13:14:54.932343" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.930055" elapsed="0.002541">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<kw name="Take Screenshot">
+<msg time="2025-01-06T13:14:54.935322" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<arg>fullPage=true</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.935259" elapsed="0.000149">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.933371" elapsed="0.002438">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.928567" elapsed="0.007677">Setup failed:
+No keyword with name 'New Browser' found.
+
+Also teardown failed:
+No keyword with name 'Take Screenshot' found.</status>
+</test>
+<test id="s1-s1-t3" name="Usuário deve ser obrigatório" line="18">
+<kw name="Start Browser" owner="actions" type="SETUP">
+<kw name="New Browser">
+<msg time="2025-01-06T13:14:54.942854" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<arg>browser=webkit</arg>
+<arg>headless=True</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.942737" elapsed="0.000264">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${base_url}</arg>
+<status status="NOT RUN" start="2025-01-06T13:14:54.943346" elapsed="0.000053"/>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.939669" elapsed="0.003951">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<kw name="Take Screenshot">
+<msg time="2025-01-06T13:14:54.946973" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<arg>fullPage=true</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.946878" elapsed="0.000191">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.944571" elapsed="0.002790">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.938145" elapsed="0.009669">Setup failed:
+No keyword with name 'New Browser' found.
+
+Also teardown failed:
+No keyword with name 'Take Screenshot' found.</status>
+</test>
+<test id="s1-s1-t4" name="Senha deve ser obrigatória" line="22">
+<kw name="Start Browser" owner="actions" type="SETUP">
+<kw name="New Browser">
+<msg time="2025-01-06T13:14:54.952641" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<arg>browser=webkit</arg>
+<arg>headless=True</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.952566" elapsed="0.000168">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${base_url}</arg>
+<status status="NOT RUN" start="2025-01-06T13:14:54.953011" elapsed="0.000044"/>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.950546" elapsed="0.002757">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<kw name="Take Screenshot">
+<msg time="2025-01-06T13:14:54.958842" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<arg>fullPage=true</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.958502" elapsed="0.000874">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.954058" elapsed="0.006010">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.949569" elapsed="0.011165">Setup failed:
+No keyword with name 'New Browser' found.
+
+Also teardown failed:
+No keyword with name 'Take Screenshot' found.</status>
+</test>
+<test id="s1-s1-t5" name="Login com sucesso" line="26">
+<kw name="Start Browser" owner="actions" type="SETUP">
+<kw name="New Browser">
+<msg time="2025-01-06T13:14:54.966313" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<arg>browser=webkit</arg>
+<arg>headless=True</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.966238" elapsed="0.000173">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="New Page">
+<arg>${base_url}</arg>
+<status status="NOT RUN" start="2025-01-06T13:14:54.966959" elapsed="0.000092"/>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.964321" elapsed="0.003206">No keyword with name 'New Browser' found.</status>
+</kw>
+<kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<kw name="Take Screenshot">
+<msg time="2025-01-06T13:14:54.973067" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<arg>fullPage=true</arg>
+<status status="FAIL" start="2025-01-06T13:14:54.972958" elapsed="0.000237">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.968654" elapsed="0.004895">No keyword with name 'Take Screenshot' found.</status>
+</kw>
+<status status="FAIL" start="2025-01-06T13:14:54.963164" elapsed="0.010890">Setup failed:
+No keyword with name 'New Browser' found.
+
+Also teardown failed:
+No keyword with name 'Take Screenshot' found.</status>
+</test>
+<doc>Testes de Criação de Clientes</doc>
+<status status="FAIL" start="2025-01-06T13:14:54.862403" elapsed="0.114074"/>
+</suite>
+<status status="FAIL" start="2025-01-06T13:14:54.732188" elapsed="0.247144"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-06T13:14:54.898986" level="ERROR">Error in file 'C:\poc\resources\actions.robot' on line 4: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313
+  C:\Users\Usuario\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>

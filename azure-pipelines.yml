@@ -35,3 +35,4 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: 'logs/output-xunit.xml'
   displayName: 'Publish Test Results'
+
