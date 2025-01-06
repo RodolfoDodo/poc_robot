@@ -14,7 +14,7 @@ steps:
     python -m pip install --upgrade pip
     pip install robotframework
     pip install robotframework-seleniumlibrary
-    # Adicione outras bibliotecas necessárias
+   
   displayName: 'Instalar dependências'
 
 - script: |
