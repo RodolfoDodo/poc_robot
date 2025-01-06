@@ -1,0 +1,29 @@
+trigger:
+- main  # Roda o pipeline sempre que há alterações na branch 'main'
+
+pool:
+  vmImage: 'windows-latest'  # Usa um agente hospedado no Azure com Windows
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'  # Instala o Python 3.x
+    addToPath: true
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install robotframework
+    pip install robotframework-seleniumlibrary
+    # Adicione outras bibliotecas necessárias
+  displayName: 'Instalar dependências'
+
+- script: |
+    robot --outputdir results tests/  # Roda os testes e salva os resultados em "results"
+  displayName: 'Executar testes Robot Framework'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'Robot'
+    testResultsFiles: 'results/output.xml'
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+  displayName: 'Publicar resultados dos testes'

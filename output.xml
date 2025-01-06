@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-06T12:56:24.920001" rpa="false" schemaversion="5">
+<suite id="s1" name="Navegador" source="C:\poc\navegador.robot">
+<test id="s1-t1" name="Acessar Globo" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-06T12:56:25.913827" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
+<arg>https://www.globo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-06T12:56:25.913321" elapsed="3.290209"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-01-06T12:56:29.205161" elapsed="3.242317"/>
+</kw>
+<status status="PASS" start="2025-01-06T12:56:25.911336" elapsed="6.536795"/>
+</test>
+<status status="PASS" start="2025-01-06T12:56:24.923296" elapsed="7.526348"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Navegador">Navegador</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
