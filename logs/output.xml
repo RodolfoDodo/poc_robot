@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-06T13:14:54.724208" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.1 on win32)" generated="2025-01-06T13:38:22.069573" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\poc\tests">
 <suite id="s1-s1" name="Login" source="C:\poc\tests\login.robot">
 <test id="s1-s1-t1" name="Senha incorreta" line="10">
 <kw name="Start Browser" owner="actions" type="SETUP">
+<msg time="2025-01-06T13:38:22.141702" level="TRACE">Arguments: [  ]</msg>
 <kw name="New Browser">
-<msg time="2025-01-06T13:14:54.914653" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<msg time="2025-01-06T13:38:22.143066" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>browser=webkit</arg>
 <arg>headless=True</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.914520" elapsed="0.000309">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.143014" elapsed="0.000117">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="New Page">
 <arg>${base_url}</arg>
-<status status="NOT RUN" start="2025-01-06T13:14:54.915838" elapsed="0.000061"/>
+<status status="NOT RUN" start="2025-01-06T13:38:22.143329" elapsed="0.000026"/>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.906738" elapsed="0.009489">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.141416" elapsed="0.002102">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<msg time="2025-01-06T13:38:22.144316" level="TRACE">Arguments: [  ]</msg>
 <kw name="Take Screenshot">
-<msg time="2025-01-06T13:14:54.923361" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<msg time="2025-01-06T13:38:22.145281" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
 <arg>fullPage=true</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.923194" elapsed="0.000344">No keyword with name 'Take Screenshot' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.145243" elapsed="0.000084">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.917425" elapsed="0.006698">No keyword with name 'Take Screenshot' found.</status>
+<msg time="2025-01-06T13:38:22.145470" level="TRACE">Return: None</msg>
+<status status="FAIL" start="2025-01-06T13:38:22.144091" elapsed="0.001447">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.903982" elapsed="0.020650">Setup failed:
+<status status="FAIL" start="2025-01-06T13:38:22.140167" elapsed="0.005609">Setup failed:
 No keyword with name 'New Browser' found.
 
 Also teardown failed:
@@ -32,27 +35,30 @@ No keyword with name 'Take Screenshot' found.</status>
 </test>
 <test id="s1-s1-t2" name="Usuário não cadastrado" line="14">
 <kw name="Start Browser" owner="actions" type="SETUP">
+<msg time="2025-01-06T13:38:22.147774" level="TRACE">Arguments: [  ]</msg>
 <kw name="New Browser">
-<msg time="2025-01-06T13:14:54.931966" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<msg time="2025-01-06T13:38:22.148622" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>browser=webkit</arg>
 <arg>headless=True</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.931899" elapsed="0.000160">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.148587" elapsed="0.000083">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="New Page">
 <arg>${base_url}</arg>
-<status status="NOT RUN" start="2025-01-06T13:14:54.932343" elapsed="0.000045"/>
+<status status="NOT RUN" start="2025-01-06T13:38:22.148821" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.930055" elapsed="0.002541">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.147593" elapsed="0.001369">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<msg time="2025-01-06T13:38:22.149594" level="TRACE">Arguments: [  ]</msg>
 <kw name="Take Screenshot">
-<msg time="2025-01-06T13:14:54.935322" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<msg time="2025-01-06T13:38:22.150494" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
 <arg>fullPage=true</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.935259" elapsed="0.000149">No keyword with name 'Take Screenshot' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.150461" elapsed="0.000078">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.933371" elapsed="0.002438">No keyword with name 'Take Screenshot' found.</status>
+<msg time="2025-01-06T13:38:22.150661" level="TRACE">Return: None</msg>
+<status status="FAIL" start="2025-01-06T13:38:22.149405" elapsed="0.001318">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.928567" elapsed="0.007677">Setup failed:
+<status status="FAIL" start="2025-01-06T13:38:22.147030" elapsed="0.003952">Setup failed:
 No keyword with name 'New Browser' found.
 
 Also teardown failed:
@@ -60,27 +66,30 @@ No keyword with name 'Take Screenshot' found.</status>
 </test>
 <test id="s1-s1-t3" name="Usuário deve ser obrigatório" line="18">
 <kw name="Start Browser" owner="actions" type="SETUP">
+<msg time="2025-01-06T13:38:22.153009" level="TRACE">Arguments: [  ]</msg>
 <kw name="New Browser">
-<msg time="2025-01-06T13:14:54.942854" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<msg time="2025-01-06T13:38:22.153930" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>browser=webkit</arg>
 <arg>headless=True</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.942737" elapsed="0.000264">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.153892" elapsed="0.000088">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="New Page">
 <arg>${base_url}</arg>
-<status status="NOT RUN" start="2025-01-06T13:14:54.943346" elapsed="0.000053"/>
+<status status="NOT RUN" start="2025-01-06T13:38:22.154146" elapsed="0.000029"/>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.939669" elapsed="0.003951">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.152751" elapsed="0.001538">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<msg time="2025-01-06T13:38:22.154971" level="TRACE">Arguments: [  ]</msg>
 <kw name="Take Screenshot">
-<msg time="2025-01-06T13:14:54.946973" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<msg time="2025-01-06T13:38:22.155910" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
 <arg>fullPage=true</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.946878" elapsed="0.000191">No keyword with name 'Take Screenshot' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.155873" elapsed="0.000083">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.944571" elapsed="0.002790">No keyword with name 'Take Screenshot' found.</status>
+<msg time="2025-01-06T13:38:22.156082" level="TRACE">Return: None</msg>
+<status status="FAIL" start="2025-01-06T13:38:22.154783" elapsed="0.001367">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.938145" elapsed="0.009669">Setup failed:
+<status status="FAIL" start="2025-01-06T13:38:22.152164" elapsed="0.004251">Setup failed:
 No keyword with name 'New Browser' found.
 
 Also teardown failed:
@@ -88,27 +97,30 @@ No keyword with name 'Take Screenshot' found.</status>
 </test>
 <test id="s1-s1-t4" name="Senha deve ser obrigatória" line="22">
 <kw name="Start Browser" owner="actions" type="SETUP">
+<msg time="2025-01-06T13:38:22.158769" level="TRACE">Arguments: [  ]</msg>
 <kw name="New Browser">
-<msg time="2025-01-06T13:14:54.952641" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<msg time="2025-01-06T13:38:22.159808" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>browser=webkit</arg>
 <arg>headless=True</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.952566" elapsed="0.000168">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.159749" elapsed="0.000115">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="New Page">
 <arg>${base_url}</arg>
-<status status="NOT RUN" start="2025-01-06T13:14:54.953011" elapsed="0.000044"/>
+<status status="NOT RUN" start="2025-01-06T13:38:22.160028" elapsed="0.000023"/>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.950546" elapsed="0.002757">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.158417" elapsed="0.001752">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<msg time="2025-01-06T13:38:22.160881" level="TRACE">Arguments: [  ]</msg>
 <kw name="Take Screenshot">
-<msg time="2025-01-06T13:14:54.958842" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<msg time="2025-01-06T13:38:22.161820" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
 <arg>fullPage=true</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.958502" elapsed="0.000874">No keyword with name 'Take Screenshot' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.161784" elapsed="0.000091">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.954058" elapsed="0.006010">No keyword with name 'Take Screenshot' found.</status>
+<msg time="2025-01-06T13:38:22.162000" level="TRACE">Return: None</msg>
+<status status="FAIL" start="2025-01-06T13:38:22.160673" elapsed="0.001381">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.949569" elapsed="0.011165">Setup failed:
+<status status="FAIL" start="2025-01-06T13:38:22.157616" elapsed="0.004701">Setup failed:
 No keyword with name 'New Browser' found.
 
 Also teardown failed:
@@ -116,36 +128,39 @@ No keyword with name 'Take Screenshot' found.</status>
 </test>
 <test id="s1-s1-t5" name="Login com sucesso" line="26">
 <kw name="Start Browser" owner="actions" type="SETUP">
+<msg time="2025-01-06T13:38:22.164307" level="TRACE">Arguments: [  ]</msg>
 <kw name="New Browser">
-<msg time="2025-01-06T13:14:54.966313" level="FAIL">No keyword with name 'New Browser' found.</msg>
+<msg time="2025-01-06T13:38:22.165264" level="FAIL">No keyword with name 'New Browser' found.</msg>
 <arg>browser=webkit</arg>
 <arg>headless=True</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.966238" elapsed="0.000173">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.165218" elapsed="0.000102">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="New Page">
 <arg>${base_url}</arg>
-<status status="NOT RUN" start="2025-01-06T13:14:54.966959" elapsed="0.000092"/>
+<status status="NOT RUN" start="2025-01-06T13:38:22.166013" elapsed="0.000050"/>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.964321" elapsed="0.003206">No keyword with name 'New Browser' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.164109" elapsed="0.002093">No keyword with name 'New Browser' found.</status>
 </kw>
 <kw name="Finish Browser" owner="actions" type="TEARDOWN">
+<msg time="2025-01-06T13:38:22.166983" level="TRACE">Arguments: [  ]</msg>
 <kw name="Take Screenshot">
-<msg time="2025-01-06T13:14:54.973067" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
+<msg time="2025-01-06T13:38:22.169826" level="FAIL">No keyword with name 'Take Screenshot' found.</msg>
 <arg>fullPage=true</arg>
-<status status="FAIL" start="2025-01-06T13:14:54.972958" elapsed="0.000237">No keyword with name 'Take Screenshot' found.</status>
+<status status="FAIL" start="2025-01-06T13:38:22.169736" elapsed="0.000156">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.968654" elapsed="0.004895">No keyword with name 'Take Screenshot' found.</status>
+<msg time="2025-01-06T13:38:22.170061" level="TRACE">Return: None</msg>
+<status status="FAIL" start="2025-01-06T13:38:22.166706" elapsed="0.003416">No keyword with name 'Take Screenshot' found.</status>
 </kw>
-<status status="FAIL" start="2025-01-06T13:14:54.963164" elapsed="0.010890">Setup failed:
+<status status="FAIL" start="2025-01-06T13:38:22.163524" elapsed="0.007171">Setup failed:
 No keyword with name 'New Browser' found.
 
 Also teardown failed:
 No keyword with name 'Take Screenshot' found.</status>
 </test>
 <doc>Testes de Criação de Clientes</doc>
-<status status="FAIL" start="2025-01-06T13:14:54.862403" elapsed="0.114074"/>
+<status status="FAIL" start="2025-01-06T13:38:22.130258" elapsed="0.041867"/>
 </suite>
-<status status="FAIL" start="2025-01-06T13:14:54.732188" elapsed="0.247144"/>
+<status status="FAIL" start="2025-01-06T13:38:22.072128" elapsed="0.101538"/>
 </suite>
 <statistics>
 <total>
@@ -159,7 +174,7 @@ No keyword with name 'Take Screenshot' found.</status>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-01-06T13:14:54.898986" level="ERROR">Error in file 'C:\poc\resources\actions.robot' on line 4: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
+<msg time="2025-01-06T13:38:22.138671" level="ERROR">Error in file 'C:\poc\resources\actions.robot' on line 4: Importing library 'Browser' failed: ModuleNotFoundError: No module named 'Browser'
 Traceback (most recent call last):
   None
 PYTHONPATH:
