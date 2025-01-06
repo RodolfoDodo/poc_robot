@@ -18,7 +18,7 @@ steps:
   displayName: 'Instalar dependências'
 
 - script: |
-    robot --outputdir results tests/  # Roda os testes e salva os resultados em "results"
+    robot --outputdir results tests/
   displayName: 'Executar testes Robot Framework'
 
 - task: PublishTestResults@2
